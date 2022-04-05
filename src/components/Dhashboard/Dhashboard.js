@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Dhashboard = () => {
+const Dhashboard = (props) => {
+    console.log(props.reveiw)
     return (
         <div>
             <h1>Dhashboard</h1>

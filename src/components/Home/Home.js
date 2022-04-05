@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
+import useCustomers from '../../hooks/useCustomers';
+import CustomersReviews from '../CustomersReviews/CustomersReviews';
 import Reviews from '../Reviews/Reviews';
 import './Home.css';
 const Home = () => {
-    const [reveiws,setReviews]=useState([]);
-    useEffect(()=>{
-        fetch('data.json')
-        .then(res=>res.json())
-        .then(data=>setReviews(data))
-    },[])
+    const [customers,setCustomers]=useCustomers();
     return (
         <div>
           <div className="grid container">
@@ -21,13 +19,18 @@ const Home = () => {
                 <img src="https://hatureya.com/wp-content/uploads/2019/04/36-1000x1000.jpg" alt="" />
                 </div>
           </div>
-          <h1>Coustomer Reviews {reveiws.length}</h1>
+          
+          <div>
+          <h1>Coustomer Reviews{customers.length}:</h1>
           {
-              reveiws.map(reveiw=><Reviews
-              reveiw={reveiw}
-              ></Reviews>)
+              customers.map(review=><CustomersReviews
+              key={review.id}
+              review={review}
+              ></CustomersReviews>)
           }
-          <h4>name{reveiws.name}</h4>
+         <Button variant='primary'>See all customers</Button>
+          </div>
+          
         </div>
     );
 };
