@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name":"Abdul",
+        "review":"Their products are very good in quality. There is no adulteration in their products. I buy regular products from now on. If I need a product replacement, they can easily replace it.",
+        "rating":5
+    },
+    {
+        "id":2,
+        "name":"Iamin",
+        "review":"I never trusted anyone when I bought a product online. But one day when I search on Google to buy oil, this website comes up and I order the product from now on. I'm so glad they gave me a good product.",
+        "rating":5
+    },
+    {
+        "id":3,
+        "name":"Imon",
+        "review":"This is the best organization I've ever seen. You can buy products from now on. The oil market here is better than others.",
+        "rating":5
+    },
+    {
+        "id":4,
+        "name":"Jihan",
+        "review":"The oil of this organization is much better. There is no adulteration. You can buy the following. The staff here is very good. They help a lot.",
+        "rating":5
+    },
+    {
+        "id":5,
+        "name":"Imam",
+        "review":"I think the oil here is the best oil in the country. You can buy these oils without fear. This will be very helpful for the health of your children.",
+        "rating":5
+    },
+    {
+        "id":6,
+        "name":"Sakib",
+        "review":"It is the best institution in the country. This is our pride. The oil found here is famous. The oil here is very healthy. This organization is very good",
+        "rating":5
+    }
+]

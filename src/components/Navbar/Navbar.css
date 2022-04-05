@@ -7,6 +7,6 @@ nav a{
     border-bottom: 3px solid gray;
 }
 nav a:hover{
-    color:brown;
-    border-bottom: 3px solid brown;
+    color:purple;
+    border-bottom: 3px solid purple;
 }

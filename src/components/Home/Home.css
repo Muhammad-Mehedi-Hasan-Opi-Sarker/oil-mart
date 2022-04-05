@@ -3,7 +3,13 @@
    display: grid;
    grid-template-columns: repeat(2,1fr);
 }
+h1{
+    color: purple;
+}
+p{
+    font-size: 1rem;
+}
 .picture img{
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
 }
