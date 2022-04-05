@@ -5,7 +5,13 @@ import CustomersReviews from '../CustomersReviews/CustomersReviews';
 import Reviews from '../Reviews/Reviews';
 import './Home.css';
 const Home = () => {
-    const [customers,setCustomers]=useCustomers();
+    // const [customers,setCustomers]=useCustomers();
+    const [customers,setCustomers]=useState([]);
+    useEffect(()=>{
+        fetch('homedata.json')
+        .then(res=>res.json())
+        .then(data=>setCustomers(data))
+    },[])
     return (
         <div>
           <div className="grid container">
@@ -21,11 +27,11 @@ const Home = () => {
           </div>
           
           <div>
-          <h1>Coustomer Reviews{customers.length}:</h1>
+          <h1>Coustomer Reviews:</h1>
           {
-              customers.map(review=><CustomersReviews
-              key={review.id}
-              review={review}
+              customers.map(customer=><CustomersReviews
+              key={customer.id}
+              customer={customer}
               ></CustomersReviews>)
           }
          <Button variant='primary'>See all customers</Button>

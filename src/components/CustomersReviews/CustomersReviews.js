@@ -3,7 +3,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 const CustomersReviews = (props) => {
-    const {name,review,rating}=props.review;
+    const {name,review}=props.customer;
     return (
         <div>
             <Card className='mt-5'>
